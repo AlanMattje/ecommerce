@@ -7,7 +7,7 @@ const Home = () => {
     <div>
       <div className='Items'>
         {items.map((item) => (
-          <Item key={item.id} {...item} />
+          <Item key={item.id} item={item} />
         ))}
       </div>
     </div>
@@ -15,3 +15,4 @@ const Home = () => {
 };
 
 export default Home;
+

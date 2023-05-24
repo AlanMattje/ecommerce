@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Carrito from './Carrito';
+
 
 const Navbar = () => {
   return (
@@ -18,12 +18,14 @@ const Navbar = () => {
               <Link to="/" className="nav-link">Home</Link>
             </li>
             <li className="nav-item">
-              <Link to="/category/:categoryId" className="nav-link">Category</Link>
+            <Link to="/category/1" className="nav-link">Categoria</Link>
             </li>
           </ul>
           <div className="ms-auto">
             <Link to="/checkout" className="nav-link">
-              <Carrito />
+            <button id="botonCarrito">
+        CARRITO 🛒
+           </button>
             </Link>
           </div>
         </div>
