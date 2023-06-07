@@ -5,6 +5,15 @@ const items = [
     titulo: "Motosierra",
     precio: "$50000",
     descripcion: "Esto es una Motosierra",
+    categoria: "Motosierras",
+  },
+  {
+    id: 5,
+    imagen: "/img/motosierra.jpg",
+    titulo: "Mtosierra",
+    precio: "$20000",
+    descripcion: "Esto es una Motosierra",
+    categoria: "Motosierras",
   },
   {
     id: 2,
@@ -12,6 +21,7 @@ const items = [
     titulo: "Generador",
     precio: "$30000",
     descripcion: "Esto es un generador",
+    categoria: "Generadores",
   },
   {
     id: 3,
@@ -19,7 +29,16 @@ const items = [
     titulo: "Fumigador",
     precio: "$20000",
     descripcion: "Esto es un fumigador",
-  }
+    categoria: "Fumigadores",
+  },
+  {
+    id: 4,
+    imagen: "/img/pulverizador.jpg",
+    titulo: "Pulverizador",
+    precio: "$22000",
+    descripcion: "Esto es un Pulverizador",
+    categoria: "Pulverizador",
+  },
 ];
 
 export default items;

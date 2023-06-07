@@ -5,7 +5,7 @@ import items from '../Components/ItemsData';
 const Home = () => {
   return (
     <div>
-      <div className='Items'>
+      <div>
         {items.map((item) => (
           <Item key={item.id} item={item} />
         ))}
