@@ -17,7 +17,7 @@ _______
 _______
 
 ## La aplicación esta disponible en:
-[https://e-commerce.vercel.app/](https://ecommerce-six-weld.vercel.app/)
+https://ecommerce-six-weld.vercel.app
 
 _______
 
