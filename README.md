@@ -17,7 +17,7 @@ _______
 _______
 
 ## La aplicación esta disponible en:
-[https://e-commerce-coderhouse.vercel.app/](URL Here)
+https://e-commerce.vercel.app/
 
 _______
 
