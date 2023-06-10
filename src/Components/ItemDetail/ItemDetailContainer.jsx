@@ -31,6 +31,7 @@ const ItemDetailContainer = ({ cartItems, setCartItems }) => {
         } else {
         }
       } catch (error) {
+
       } finally {
         setLoading(false);
       }
@@ -50,7 +51,7 @@ const ItemDetailContainer = ({ cartItems, setCartItems }) => {
   };
 
   const agregarAlCarrito = () => {
-    const itemExistente = cartItems.find((cartItem) => cartItem.id === Productos.id);
+    const itemExistente = cartItems?.find((cartItem) => cartItem.id === Productos.id);
 
     if (itemExistente) {
       const nuevosItems = cartItems.map((cartItem) => {

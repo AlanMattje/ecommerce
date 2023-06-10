@@ -14,8 +14,14 @@ const Navbar = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
+          <li className="nav-item">
+            <Link to="/" className="nav-link ">Inicio</Link>
+            </li>
             <li className="nav-item">
             <Link to="/category" className="nav-link ">Categoria</Link>
+            </li>
+            <li className="nav-item">
+            <Link to="/Contactos" className="nav-link ">Contactos</Link>
             </li>
           </ul>
           <div className="ms-auto">

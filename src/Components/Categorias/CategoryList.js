@@ -1,7 +1,6 @@
 import React from 'react';
 
-const CategoryList = ({ categories, selectedCategory, onSelectCategory }) => {
- 
+const CategoryList = ({ categories = [], selectedCategory, onSelectCategory }) => {
   return (
     <div className="categoria">
       <button key="Todas" className={selectedCategory === 'Todas' ? 'active' : ''} onClick={() => onSelectCategory('Todas')}>

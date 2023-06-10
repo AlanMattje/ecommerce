@@ -35,7 +35,7 @@ const Carrito = ({ cartItems, setCartItems }) => {
             </div>
           ))
         ) : (
-          <h1 className='Cart-Vacio'>No hay items en el carrito ☹️</h1>
+          <h1 className='Cart-Vacio'>No hay productos agregados al carrito ☹️</h1>
         )}
       </div>
       {cartItems.length > 0 && (
