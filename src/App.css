@@ -1,16 +1,7 @@
-.footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 50px;
-  background-color: rgb(224, 222, 222);
-  text-align: center;
-}
-
 .logo{
   height: 40px;
 }
-
+            /*CARRITO*/
 #botonCarrito {
   border-color: rgb(38, 204, 23);
   color:rgb(0, 0, 0);
@@ -18,45 +9,130 @@
   padding: 12px;
 }
 
-.Productoind {
+
+            /*DETALLE ITEM*/
+
+.item-container {
   display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+  width: 400px;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.image-container.hovered {
+  transform: scale(1.1);
+}
+
+.item-imagen {
+  width: 100%;
+  height: auto;
+}
+
+.content-container {
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.details-container {
+  margin-bottom: 10px;
+}
+
+.precio {
+  color: #f2582d;
+  font-size: 24px;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.cantidades-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.Cantidad {
+  color: #6d1a02;
+  font-size: 20px;
+  margin-right: 10px;
 }
 
 .cantidades {
-  
-  padding: 20px;
-}
-.cantidades span {
-  padding: 5px;
-  font-size: x-large;
+  display: flex;
+  align-items: center;
 }
 
 .cantidades button {
   margin: 5px;
   border-color: rgb(0, 0, 0);
-  color:rgb(0, 0, 0);
-  background-color: rgb(55, 136, 202);
-  padding: 9px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(184, 205, 222);
+  padding: 5px;
+  font-size: 20px;
 }
 
-.motosierra {
-  max-width: 100%;
-  margin: 0 auto;
-  display: block;
+.cantidad-mas:hover {
+  background-color: #36fa5a;
 }
 
-.Items {
-  display: flex;
-  
-  justify-content:space-around;
+.cantidad-menos:hover {
+  background-color: #f66d6d;
+}
+
+.agregar-carrito {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.agregar-carrito:hover {
+  background-color: #45a049;
+}
+
+.content-container1 {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.descripcion {
+  padding: 10px;
   margin: 20px;
+  border-top: 2px solid red;
 }
 
-.Product > img {
-  width: 490px;
-  height: 490px;
+.mensaje-container {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f0d390;
+  border: 2px solid #000000;
+  padding: 10px;
+  font-size: 17px;
 }
 
+.mensaje {
+  text-align: center;
+}
+
+.Volver {
+  margin-top: 20px;
+}
+            
+            
+          /*LISTA PRODUCTOS*/
 .VerMas {
   border: 1px solid #4d4c4c;
   background-color: rgb(250, 250, 150);
@@ -73,6 +149,7 @@
   display: inline-block;
   text-align: center;
 }
+
 .container {
   display: flex;
   flex-direction: column;
@@ -89,8 +166,8 @@
   justify-content: center;
 }
 
-.categoria-btn {
-  background-color: #7fe0ef;
+.categoria button,  .Volver {
+  background-color: #f5c660;
   color: #000000;
   padding: 8px 16px;
   display: inline-block;
@@ -100,40 +177,149 @@
   text-decoration: none;
 }
 
-.categoria-btn:hover {
-  background-color: #3f8ded;
+.categoria button.active:hover {
+  background-color: #36fa5a;
 }
 
-.item-container {
+          /*CARRITO*/
+.Cart {
+  background-color: #f2f2f2;
+  padding: 10px;
+  margin-bottom: 20px;
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
-.image-container {
-
-  flex: 0 0 auto; /* Evita que la imagen se estire */
-  margin: 100px; /* Agrega un margen a la derecha para separar la imagen del contenido */
-  border: 2px solid #4d4c4c;
-}
-
-.content-container {
-  flex: 1;
-  
-
-
-}
-
-.mensaje-container {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #00f936;
-  border: 2px solid #000000;
-  padding: 30px;
+.Cart h1 {
   font-size: 24px;
+  margin-bottom: 10px;
 }
 
-.mensaje {
-  text-align: center;
+.Cart-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
 }
+
+.Cart-container img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.Cart-container div {
+  font-size: 16px;
+}
+
+.Cart-container button {
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.Cart-container button:hover {
+  background-color: #f1bfbf;
+}
+
+.Cart-container p {
+  font-size: 16px;
+  text-align: center;
+  margin: 20px 0;
+}
+  /*ORDENES*/
+
+  .Orden-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center};
+  
+  .Ordenes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .Ordenes-titulo, .Cart-Vacio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+  }
+  
+  .Ordenes form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .Ordenes form div {
+    margin-bottom: 10px;
+  }
+  
+  .Ordenes form label {
+    margin-right: 10px;
+  }
+  
+  .Ordenes form input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .Ordenes form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .Ordenes form button:hover {
+    background-color: #12982a;
+  }
+
+  /*Confirmacion*/
+  .confirmacion-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+  .confirmacion-titulo {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .confirmacion-imagen {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+  
+  .confirmacion-orden {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .confirmacion-detalle {
+    font-size: 18px;
+  }
+  
